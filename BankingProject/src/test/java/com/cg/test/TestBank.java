@@ -18,8 +18,7 @@ public class TestBank {
 		bank = new BankServiceImpl();
 	}
 	
-	@Test 
-	(expected=(MinimumBalanceException.class))
+	@Test (expected=MinimumBalanceException.class)
 	public void checkAccountCreation() throws MinimumBalanceException
 	{
 		Customer cusomer = new Customer();
